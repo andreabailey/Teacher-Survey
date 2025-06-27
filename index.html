@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher AI Tools Survey</title>
+</head>
+<body>
+    <div class="survey-container">
+        <div id="survey-form">
+            <h1>Teacher AI Tools Survey</h1>
+            
+            <form id="teacherSurvey">
+                <div class="question-group">
+                    <label for="favoriteSubject">1. What is your favorite subject to teach?</label>
+                    <input type="text" id="favoriteSubject" name="favoriteSubject" required placeholder="Enter your favorite subject...">
+                </div>
+
+                <div class="question-group">
+                    <label>2. How helpful do you find AI tools in your classroom?</label>
+                    <div class="scale-container">
+                        <div style="width: 100%;">
+                            <div class="scale-labels">
+                                <span>Not Helpful</span>
+                                <span>Slightly Helpful</span>
+                                <span>Moderately Helpful</span>
+                                <span>Very Helpful</span>
+                                <span>Extremely Helpful</span>
+                            </div>
+                            <div class="scale-inputs">
+                                <input type="radio" id="helpful1" name="helpfulness" value="1" required>
+                                <input type="radio" id="helpful2" name="helpfulness" value="2" required>
+                                <input type="radio" id="helpful3" name="helpfulness" value="3" required>
+                                <input type="radio" id="helpful4" name="helpfulness" value="4" required>
+                                <input type="radio" id="helpful5" name="helpfulness" value="5" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <label>3. Which of the following AI tools have you used? (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="chatgpt" name="aiTools" value="ChatGPT">
+                            <label for="chatgpt">ChatGPT</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gemini" name="aiTools" value="Gemini">
+                            <label for="gemini">Gemini</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="claude" name="aiTools" value="Claude">
+                            <label for="claude">Claude</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="perplexity" name="aiTools" value="Perplexity AI">
+                            <label for="perplexity">Perplexity AI</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="other" name="aiTools" value="Other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Survey</button>
+            </form>
+        </div>
+
+        <div id="thank-you-message" class="thank-you">
+            <div class="check-icon">✓</div>
+            <h2>Thank You!</h2>
+            <p>Thank you for your response! Your feedback is valuable to us.</p>
+        </div>
+    </div>
+</body>
+</html>
